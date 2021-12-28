@@ -301,7 +301,7 @@ const Home: NextPage<HomePageProps> = ({
             )}
           </InView>
 
-          <InView triggerOnce threshold={0.5}>
+          <InView triggerOnce threshold={0.25}>
             {({ ref, inView }) => (
               <div
                 ref={ref}
