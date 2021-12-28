@@ -85,18 +85,9 @@ const FeaturedProject: React.FC<FeaturedProjectProps> = ({
               <h4 className="md:text-h4 text-h5 text-black font-semibold mr-3">
                 {name}
               </h4>
-              <Badge
-                marginRight="4"
-                paddingX="2"
-                fontWeight="normal"
-                rounded="xl"
-                textColor="white"
-                bgColor="blue"
-              >
-                {isOnGoing ? "Ongoing" : year}
-              </Badge>
+              <Badge>{isOnGoing ? "Ongoing" : year}</Badge>
             </div>
-            <div className="flex items-center mb-2 md:mb-0">
+            <div className="flex items-center mb-2 md:mb-0 ml-0 md:ml-2">
               {links
                 ?.sort((a, b) => {
                   if (a.type < b.type) return -1;
@@ -125,16 +116,7 @@ const FeaturedProject: React.FC<FeaturedProjectProps> = ({
           <h6 className="text-body text-grey-1 mb-4">{role}</h6>
           <div className="flex items-center mb-4">
             {builtWith?.map((tech) => (
-              <Badge
-                key={tech}
-                variant="outline"
-                paddingX="3"
-                fontWeight="normal"
-                rounded="xl"
-                textColor="grey.1"
-                borderColor="grey.1"
-                className="mr-2.5 last:mr-0"
-              >
+              <Badge key={tech} variant="outline" className="mr-2.5 last:mr-0">
                 {tech}
               </Badge>
             ))}

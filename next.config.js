@@ -5,7 +5,26 @@ module.exports = {
     config.module.rules.push({
       test: /\.svg$/i,
       issuer: /\.[jt]sx?$/,
-      use: ["@svgr/webpack", "url-loader"],
+      use: [
+        {
+          loader: "@svgr/webpack",
+          options: {
+            svgoConfig: {
+              plugins: [
+                {
+                  name: "preset-default",
+                  params: {
+                    overrides: {
+                      removeViewBox: false,
+                    },
+                  },
+                },
+              ],
+            },
+          },
+        },
+        "url-loader",
+      ],
     });
 
     return config;

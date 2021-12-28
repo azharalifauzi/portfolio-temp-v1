@@ -19,7 +19,7 @@ const Card: React.FC<CardProps> = ({
         "group cursor-pointer transform transition-all hover:-translate-y-1 aspect-square bg-grey-2"
       )}
     >
-      <div className="flex flex-col justify-start items-strech px-6 py-4">
+      <div className="flex flex-col justify-start items-strech px-6 py-4 h-full">
         <div className="flex items-center justify-between  w-full">
           <IconFolder />
           <div className="flex items-center">

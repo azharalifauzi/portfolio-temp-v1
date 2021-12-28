@@ -14,6 +14,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect } from "react";
 import { InView } from "react-intersection-observer";
+import { projects } from "utils/data";
 
 interface HomePageProps {
   featuredProjects: Project[];
@@ -23,8 +24,10 @@ interface HomePageProps {
 export const getStaticProps: GetStaticProps<HomePageProps> = () => {
   return {
     props: {
-      featuredProjects: [],
-      normalProjects: [],
+      featuredProjects: projects.filter(({ isFeatured }) => isFeatured),
+      normalProjects: projects.filter(
+        ({ isFeatured, isArchive }) => !isFeatured && !isArchive
+      ),
     },
   };
 };
@@ -100,7 +103,7 @@ const Home: NextPage<HomePageProps> = ({
           id="hero"
           className="container mx-auto mt-40 md:mt-60 px-6 md:px-10"
         >
-          {/* <div className="grid lg:grid-cols-5 items-center ">
+          <div className="grid lg:grid-cols-5 items-center ">
             <div className="lg:col-span-3">
               <motion.div
                 custom={0}
@@ -150,14 +153,14 @@ const Home: NextPage<HomePageProps> = ({
             >
               <IconCodeThinking className="w-full" />
             </motion.div>
-          </div> */}
+          </div>
         </section>
 
         <section
           id="about"
           className="container mx-auto mt-28 md:mt-40 mb-16 md:mb-40 px-6 md:px-10"
         >
-          {/* <InView triggerOnce threshold={0.25}>
+          <InView triggerOnce threshold={0.25}>
             {({ ref, inView }) => (
               <motion.div
                 variants={variants}
@@ -234,14 +237,14 @@ const Home: NextPage<HomePageProps> = ({
                 </div>
               </motion.div>
             )}
-          </InView> */}
+          </InView>
         </section>
 
         <section
           id="featured-projects"
           className="container mx-auto mb-20 md:mb-40"
         >
-          {/* <InView threshold={0.25} triggerOnce>
+          <InView threshold={0.25} triggerOnce>
             {({ ref, inView }) => (
               <div ref={ref} className="px-6 md:px-10">
                 <motion.h2
@@ -271,11 +274,11 @@ const Home: NextPage<HomePageProps> = ({
                 ))}
               </div>
             )}
-          </InView> */}
+          </InView>
         </section>
 
         <section id="tinkering" className="container mx-auto px-6 md:px-10">
-          {/* <InView triggerOnce threshold={0.5}>
+          <InView triggerOnce threshold={0.5}>
             {({ ref, inView }) => (
               <div ref={ref}>
                 <motion.h2
@@ -299,9 +302,9 @@ const Home: NextPage<HomePageProps> = ({
                 </motion.p>
               </div>
             )}
-          </InView> */}
+          </InView>
 
-          {/* <InView triggerOnce threshold={0.5}>
+          <InView triggerOnce threshold={0.5}>
             {({ ref, inView }) => (
               <div
                 ref={ref}
@@ -320,7 +323,7 @@ const Home: NextPage<HomePageProps> = ({
                 ))}
               </div>
             )}
-          </InView> */}
+          </InView>
 
           <InView triggerOnce threshold={0.5}>
             {({ ref, inView }) => (
@@ -341,7 +344,7 @@ const Home: NextPage<HomePageProps> = ({
           </InView>
         </section>
 
-        {/* <InView triggerOnce threshold={0.5}>
+        <InView triggerOnce threshold={0.5}>
           {({ ref, inView }) => (
             <motion.section
               animate={inView ? "show" : undefined}
@@ -367,7 +370,7 @@ const Home: NextPage<HomePageProps> = ({
               </div>
             </motion.section>
           )}
-        </InView> */}
+        </InView>
       </main>
       <Footer />
     </>
