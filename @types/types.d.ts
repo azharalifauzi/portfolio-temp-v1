@@ -24,5 +24,5 @@ type Image = {
   id?: string;
   url?: string;
   alt?: string;
-  isPrimary?: string;
+  isPrimary?: boolean;
 };

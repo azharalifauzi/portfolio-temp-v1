@@ -62,7 +62,7 @@ const Navbar = () => {
                   Archive
                 </a>
               </Link>
-              <a href="https://resume.io/r/tTMw2DqOi">
+              <a href="https://www.linkedin.com/in/azhar-ali-fauzi-4564a117a/">
                 <Button className="border-[#2B98FD] text-[#2B98FD] hover:bg-[#2B98FD] hover:bg-opacity-20 bg-transparent border-solid border-[1px]">
                   Resume
                 </Button>
@@ -81,7 +81,7 @@ const Navbar = () => {
           <Link href="/archive">
             <a className="text-white font-semibold hover:text-blue">Archive</a>
           </Link>
-          <a href="https://resume.io/r/tTMw2DqOi">
+          <a href="https://www.linkedin.com/in/azhar-ali-fauzi-4564a117a/">
             <Button className="border-[#2B98FD] text-[#2B98FD] hover:bg-[#2B98FD] hover:bg-opacity-20 bg-transparent border-solid border-[1px]">
               Resume
             </Button>

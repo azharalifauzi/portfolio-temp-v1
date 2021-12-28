@@ -10,13 +10,15 @@ interface ArchivePage {
   projects: Project[];
 }
 
-export const getStaticProps: GetServerSideProps<ArchivePage> = async ({
-  res,
-}) => {
+export const getStaticProps: GetServerSideProps<ArchivePage> = async ({}) => {
   // ...
   return {
     props: {
-      projects,
+      projects: projects.sort((a, b) => {
+        if (a.year && b.year && a.year > b.year) return -1;
+
+        return 1;
+      }),
     },
   };
 };

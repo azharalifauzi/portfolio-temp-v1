@@ -179,19 +179,16 @@ const Home: NextPage<HomePageProps> = ({
                     Indonesia.
                     <br />
                     <br />
-                    I have 1.5 years industry experience building highly
-                    scalable web apps such as Enterprise Resource Planning
-                    Software, Content Management System, and Web Based Banking
-                    System. Proficient in HTML, CSS, Javascript, Typescript, and
-                    modern Javascript Library such as React. Also possess good
+                    I have 2 years industry experience building highly scalable
+                    web apps such as Enterprise Resource Planning Software,
+                    Content Management System, and Web Based Banking System.
+                    Proficient in HTML, CSS, Javascript, Typescript, and modern
+                    Javascript Library such as React. Also possess good
                     understanding of UI / UX Design and Backend Development
                     using Node.js.
                     <br />
-                    <br />I love to tinkering at the weekend, learning new
-                    things every week, especially technologies that are
-                    currently a hot topics around the dev community such as
-                    Golang, Rust, or Blockchain. And here are a few technologies
-                    I’ve been working recently:
+                    <br /> And here are a few technologies I’ve been working
+                    recently:
                   </p>
                   <div className="grid grid-cols-3 max-w-[315px] gap-x-3 sm:gap-x-12 gap-y-3">
                     <List color="grey-1" size="sm">
@@ -207,16 +204,16 @@ const Home: NextPage<HomePageProps> = ({
                       React.js
                     </List>
                     <List color="grey-1" size="sm">
-                      MongoDB
+                      Next.js
                     </List>
                     <List color="grey-1" size="sm">
-                      GraphQL
+                      Rust
                     </List>
                     <List color="grey-1" size="sm">
-                      Golang
+                      WebAssembly
                     </List>
                     <List color="grey-1" size="sm">
-                      Vue.js
+                      Vite.js
                     </List>
                     <List color="grey-1" size="sm">
                       Postgresql

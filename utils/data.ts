@@ -7,8 +7,24 @@ export const projects: Project[] = [
     builtWith: ["React", "Tailwindcss", "Keycloak"],
     madeAt: "PT Sirkel Kreasi Nusantara",
     role: "Front End Engineer",
-    description: "lorem ipsum",
-    achievements: ["Setup IAM using Keycloak.js"],
+    description:
+      "Web based banking system of Bank Aladin Syariah. Platform to manage accounts such as deposit, saving, etc. App was designed for Customer Service, Teller, and Supervisors.",
+    achievements: [
+      "Setup IAM using Keycloak.js",
+      "Integrate frontend code with microservices",
+    ],
+    images: [
+      {
+        isPrimary: true,
+        id: "1",
+        url: "assets/bns-1.png",
+        alt: "Bank Aladin Syariah Dashboard",
+      },
+      {
+        id: "2",
+        url: "assets/bns-2.png",
+      },
+    ],
   },
   {
     id: "2",
@@ -23,12 +39,32 @@ export const projects: Project[] = [
     ],
     achievements: [
       "Used by more than 700 people",
-      "Has created 50K certificates with total file size downloaded up to 30 GB",
+      "Has created 55K certificates with total file size downloaded up to 45 GB",
+      "Reach average engagement of user up to 11 minutes per session",
     ],
     builtWith: ["React", "WebAssembly", "Rust"],
     isFeatured: true,
-    description: "lorem ipsum",
+    description: "Platform to generate multiple certificates automatically.",
     role: "Creator",
+    images: [
+      {
+        id: "1",
+        isPrimary: true,
+        url: "assets/certifast-1.png",
+      },
+      {
+        id: "2",
+        url: "assets/certifast-2.png",
+      },
+      {
+        id: "3",
+        url: "assets/certifast-3.png",
+      },
+      {
+        id: "4",
+        url: "assets/certifast-4.png",
+      },
+    ],
   },
   {
     id: "3",
@@ -44,12 +80,28 @@ export const projects: Project[] = [
       "Integrate frontend apps with microservices",
       "Setup design and architecture for web app and desktop app",
     ],
-    madeAt: "PT Sirkel Kreasi Nusantara",
+    madeAt: "PT Emifly",
+    images: [
+      {
+        id: "1",
+        isPrimary: true,
+        url: "assets/ska-1.png",
+      },
+      {
+        id: "2",
+        url: "assets/ska-2.png",
+      },
+      {
+        id: "3",
+        url: "assets/ska-3.png",
+      },
+    ],
   },
   {
     id: "4",
     name: "Muslim Illustrations",
-    description: "lorem ipsum",
+    description:
+      "Platform that provide illustrations of muslim character freely.",
     builtWith: ["Next.js", "Chakra UI", "Supabase"],
     role: "Creator",
     links: [
@@ -67,7 +119,8 @@ export const projects: Project[] = [
   {
     id: "5",
     name: "Jadiberkah.id",
-    description: "lorem ipsum",
+    description:
+      "Platform for wakaf, zakat, and infaq from Bank Syariah Indonesia. Involved as UI Engineer.",
     builtWith: ["Laravel", "HTML", "CSS"],
     role: "UI Engineer",
     links: [{ type: "website", link: "https://jadiberkah.id" }],
@@ -77,7 +130,8 @@ export const projects: Project[] = [
   {
     id: "6",
     name: "Bank Syariah Indonesia",
-    description: "lorem ipsum",
+    description:
+      "Profile company website of Bank Syariah Indonesia. Involved as UI Engineer.",
     builtWith: ["Laravel", "HTML", "CSS"],
     role: "UI Engineer",
     links: [{ type: "website", link: "https://bankbsi.co.id" }],
@@ -87,7 +141,7 @@ export const projects: Project[] = [
   {
     id: "7",
     name: "Weeber Indonesia",
-    description: "lorem ipsum",
+    description: "Profile company website of Weeber Indonesia.",
     builtWith: ["React", "SASS", "CRA"],
     role: "Front End Engineer",
     links: [
@@ -134,7 +188,8 @@ export const projects: Project[] = [
   {
     id: "10",
     name: "Star Power PLN",
-    description: "ERP built for PT. PLN Indonesia.",
+    description:
+      "ERP built for PT. PLN Indonesia. Involved as Front End Engineer.",
     builtWith: ["React", "Ionic", "Typescript"],
     year: "2020",
     madeAt: "PT Sirkel Kreasi Nusantara",
@@ -177,8 +232,4 @@ export const projects: Project[] = [
     year: "2020",
     isArchive: true,
   },
-].sort((a, b) => {
-  if (a.year < b.year) return 1;
-
-  return -1;
-}) as Project[];
+];
