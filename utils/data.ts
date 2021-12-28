@@ -5,7 +5,7 @@ export const projects: Project[] = [
     year: "2021",
     isFeatured: true,
     builtWith: ["React", "Tailwindcss", "Keycloak"],
-    madeAt: "Sirkel Kreasi Nusantara",
+    madeAt: "PT Sirkel Kreasi Nusantara",
     role: "Front End Engineer",
     description: "lorem ipsum",
     achievements: ["Setup IAM using Keycloak.js"],
@@ -44,6 +44,7 @@ export const projects: Project[] = [
       "Integrate frontend apps with microservices",
       "Setup design and architecture for web app and desktop app",
     ],
+    madeAt: "PT Sirkel Kreasi Nusantara",
   },
   {
     id: "4",
@@ -61,6 +62,7 @@ export const projects: Project[] = [
         link: "https://github.com/azharalifauzi/muslim-illustrations-v2",
       },
     ],
+    year: "2021",
   },
   {
     id: "5",
@@ -70,6 +72,7 @@ export const projects: Project[] = [
     role: "UI Engineer",
     links: [{ type: "website", link: "https://jadiberkah.id" }],
     madeAt: "PT Sirkel Kreasi Nusantara",
+    year: "2021",
   },
   {
     id: "6",
@@ -79,6 +82,7 @@ export const projects: Project[] = [
     role: "UI Engineer",
     links: [{ type: "website", link: "https://bankbsi.co.id" }],
     madeAt: "PT Sirkel Kreasi Nusantara",
+    year: "2021",
   },
   {
     id: "7",
@@ -97,6 +101,7 @@ export const projects: Project[] = [
       },
     ],
     madeAt: "Weeber Indonesia",
+    year: "2020",
   },
   {
     id: "8",
@@ -124,6 +129,7 @@ export const projects: Project[] = [
       },
     ],
     isArchive: true,
+    year: "2020",
   },
   {
     id: "10",
@@ -134,4 +140,45 @@ export const projects: Project[] = [
     madeAt: "PT Sirkel Kreasi Nusantara",
     role: "Front End Engineer",
   },
-];
+  {
+    id: "11",
+    name: "Tanjung Bunga",
+    builtWith: ["Next.js", "Typescript", "Tailwindcss"],
+    madeAt: "Weeber Indonesia",
+    year: "2021",
+    role: "Front End Engineer",
+    links: [
+      {
+        type: "github",
+        link: "https://github.com/weeber-id/tanjungbunga-admin",
+      },
+    ],
+    isArchive: true,
+  },
+  {
+    id: "12",
+    name: "Bina Desa",
+    builtWith: ["React", "Typescript", "CRA"],
+    madeAt: "Weeber Indonesia",
+    year: "2020",
+    isArchive: true,
+    links: [
+      {
+        type: "github",
+        link: "https://github.com/weeber-id/bina-desa",
+      },
+    ],
+  },
+  {
+    id: "13",
+    name: "Wedding Web App",
+    builtWith: ["Vue.js", "SASS"],
+    madeAt: "PT Sirkel Kreasi Nusantara",
+    year: "2020",
+    isArchive: true,
+  },
+].sort((a, b) => {
+  if (a.year < b.year) return 1;
+
+  return -1;
+}) as Project[];

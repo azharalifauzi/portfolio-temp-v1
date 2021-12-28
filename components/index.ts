@@ -5,3 +5,4 @@ export { default as Badge } from "./Badge";
 export { default as Footer } from "./Footer";
 export { default as FeaturedProject } from "./FeaturedProject";
 export { default as Card } from "./Card";
+export { default as TableGrid } from "./TableGrid";
