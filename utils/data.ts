@@ -38,8 +38,8 @@ export const projects: Project[] = [
       },
     ],
     achievements: [
-      "Used by more than 700 people",
-      "Has created 55K certificates with total file size downloaded up to 45 GB",
+      "Used by more than 10K users",
+      "Has created more than 700K certificates with total file size downloaded up to 866 GB",
       "Reach average engagement of user up to 11 minutes per session",
     ],
     builtWith: ["React", "WebAssembly", "Rust"],
