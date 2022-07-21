@@ -107,7 +107,7 @@ export const projects: Project[] = [
     links: [
       {
         type: "website",
-        link: "https://muslimillustrations.co",
+        link: "https://muslim-illustrations.vercel.app/",
       },
       {
         type: "github",
@@ -169,6 +169,7 @@ export const projects: Project[] = [
       },
     ],
     year: "2021",
+    isArchive: true,
   },
   {
     id: "9",
@@ -231,5 +232,20 @@ export const projects: Project[] = [
     madeAt: "PT Sirkel Kreasi Nusantara",
     year: "2020",
     isArchive: true,
+  },
+  {
+    id: "14",
+    name: "Marv Studio",
+    builtWith: ["React.js", "Chakra UI", "Vercel"],
+    year: "2022",
+    role: "Front End Engineer",
+    description:
+      "Profile company website of Marv Studio. An Architecture studio agency.",
+    links: [
+      {
+        type: "website",
+        link: "https://marvstudio.com",
+      },
+    ],
   },
 ];

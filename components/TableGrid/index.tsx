@@ -77,6 +77,7 @@ const TableGrid: React.FC<TableGridProps> = ({
                   initial="initial"
                   transition={{ duration: 0.2, delay: 0.2 * i }}
                   ref={ref}
+                  key={i}
                 >
                   <div
                     style={{ gridTemplateColumns }}
